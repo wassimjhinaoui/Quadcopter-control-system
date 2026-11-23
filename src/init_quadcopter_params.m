@@ -1,16 +1,17 @@
-%% 2D Quadcopter Parameters
+% Nominal model values used by the controller
+m_nominal   = 1.20;     % kg
+Iyy_nominal = 0.025;    % kg*m^2
 
-% Physical constants
-m   = 1.20;      % Total mass [kg]
-Iyy = 0.025;     % Pitch moment of inertia [kg*m^2]
-g   = 9.81;      % Gravity [m/s^2]
+% Actual vehicle values used by the plant
+m_plant     = 1.4;
+Iyy_plant   = Iyy_nominal;
 
-% Actuator limits for later controller design
-T_hover = m*g;   % Hover thrust [N]
-T_max   = 24;     % Maximum total thrust [N]
-tau_max = 0.50;   % Maximum pitch torque [N*m]
+g = 9.81;               % m/s^2
 
-% Initial flight state
-x0     = 0;       % Horizontal position [m]
-z0     = 1;       % Altitude [m]
-theta0 = 0;       % Pitch angle [rad]
+T_hover = m_nominal*g;
+T_max   = 24;
+tau_max = 0.50;
+
+x0     = 0;
+z0     = 1;
+theta0 = 0;
