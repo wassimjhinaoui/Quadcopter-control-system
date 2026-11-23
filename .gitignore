@@ -29,6 +29,9 @@ codegen/
 # Cache files
 *.slxc
 
+# Reproducible simulation logs
+results/*.mat
+
 # Cloud based storage dotfile
 .MATLABDriveTag
 

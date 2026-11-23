@@ -16,4 +16,4 @@ x0     = 0;
 z0     = 1;
 theta0 = 0;
 L = 0.30;          % distance from center to each rotor [m]
-F_motor_max = 6;   % maximum thrust of one rotor [N]s
+F_motor_max = 6;   % maximum thrust of one rotor [N]
